@@ -8,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/**
- * Created by kimja on 2017-03-30.
- */
+
 
 public class fragment extends android.support.v4.app.Fragment{
     @Nullable

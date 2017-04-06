@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         });
 
     }
-    public void onClick(View v){  //온클릭으로 하는법 알기기
+    public void onClick(View v){  //온클릭으로 하는법 알기
         if(v.getId() == R.id.b5){
 
             AlertDialog.Builder dlg = new AlertDialog.Builder(this);
@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         else if (v.getId() == R.id.b6){
             AlertDialog.Builder dlg = new AlertDialog.Builder(this);
             String data[] = {"치킨","피자"};
-            dlg.setTitle("먹고싶은 메뉴는?")  //일반적인 대화상자
+            dlg.setTitle("먹고싶은 메뉴는?")
                     .setSingleChoiceItems(data, 1, new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
@@ -162,8 +162,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             View view = View.inflate(getApplicationContext(),R.layout.layout,null);
             final EditText et = (EditText)view.findViewById(R.id.editText3);
-            dlg.setTitle("먹고싶은 메뉴는?")  //일반적인 대화상자
-
+            dlg.setTitle("먹고싶은 메뉴는?")
                     .setView(view)
                     .setIcon(R.mipmap.ic_launcher)
                     .setPositiveButton("닫기",null)

@@ -147,5 +147,18 @@
                 android:text="사용자정의 대화상자" />
         </TableRow>
 
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <fragment
+                android:name="com.example.kimja.a4thclass.fragment"
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment"
+                />
+
+        </TableRow>
+
     </TableLayout>
 </LinearLayout>
